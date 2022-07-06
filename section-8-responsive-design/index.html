@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title></title>
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="">
+		<style>
+			.examples {
+				display: flex;
+			}
+			.example {
+				margin: 20px;
+			}
+			.one {
+				border: 2px solid palevioletred;
+				background: pink;
+				padding: 20px;
+				
+				font-size: 18px;
+			}
+			.two {
+				border: 2px solid orchid;
+				background: plum;
+				padding: 20px;
+				
+				font-size: 22px;
+			}
+			.three {
+				border: 2px solid goldenrod;
+				background: peachpuff;
+				padding: 20px;
+				
+				font-size: 14px;
+			}
+			
+			h1 {
+				font-size: 32px;
+			}
+			h2 {
+				font-size: 25px;
+			}
+			h3 {
+				font-size: 18px;
+			}
+			p {
+				font-size: 16px;
+			}
+			
+			.px h1 {
+				font-size: 32px;
+			}
+			.px h2 {
+				font-size: 25px;
+			}
+			.px h3 {
+				font-size: 18px;
+			}
+			.px p {
+				font-size: 16px;
+			}
+			
+			.perc h1 {
+				font-size: 170%;
+			}
+			.perc h2 {
+				font-size: 140%;
+			}
+			.perc h3 {
+				font-size: 105%;
+			}
+			.perc p {
+				font-size: 100%;
+			}
+			
+			.em h1 {
+				font-size: 1.7em;
+			}
+			.em h2 {
+				font-size: 1.4em;
+			}
+			.em h3 {
+				font-size: 1.05em;
+			}
+			.em p {
+				font-size: 1em;
+			}
+			
+			.rem h1 {
+				font-size: 1.7em;
+			}
+			.rem h2 {
+				font-size: 1.4em;
+			}
+			.rem h3 {
+				font-size: 1.05em;
+			}
+			.rem p {
+				font-size: 1em;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="examples">
+			<div class="example">
+				<p>Control</p>
+				<div class="one">
+					<p>ONE: font size: 18px</p>
+					<h1>Header 1</h1>
+					<h2>Header 2</h2>
+					<h3>Header 3</h3>
+					<p>Paragraph</p>
+					<div class="two">
+						<p>ONE: font size: 22px</p>
+						<h1>Header 1</h1>
+						<h2>Header 2</h2>
+						<h3>Header 3</h3>
+						<p>Paragraph</p>
+						<div class="three">
+							<p>ONE: font size: 14px</p>
+							<h1>Header 1</h1>
+							<h2>Header 2</h2>
+							<h3>Header 3</h3>
+							<p>Paragraph</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="example px">
+				<p>px - Pixels</p>
+				<div class="one">
+					<p>ONE: font size: 18px</p>
+					<h1>Header 1</h1>
+					<h2>Header 2</h2>
+					<h3>Header 3</h3>
+					<p>Paragraph</p>
+					<div class="two">
+						<p>ONE: font size: 22px</p>
+						<h1>Header 1</h1>
+						<h2>Header 2</h2>
+						<h3>Header 3</h3>
+						<p>Paragraph</p>
+						<div class="three">
+							<p>ONE: font size: 14px</p>
+							<h1>Header 1</h1>
+							<h2>Header 2</h2>
+							<h3>Header 3</h3>
+							<p>Paragraph</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="example perc">
+				<p>% - Percentage</p>
+				<div class="one">
+					<p>ONE: font size: 18px</p>
+					<h1>Header 1</h1>
+					<h2>Header 2</h2>
+					<h3>Header 3</h3>
+					<p>Paragraph</p>
+					<div class="two">
+						<p>ONE: font size: 22px</p>
+						<h1>Header 1</h1>
+						<h2>Header 2</h2>
+						<h3>Header 3</h3>
+						<p>Paragraph</p>
+						<div class="three">
+							<p>ONE: font size: 14px</p>
+							<h1>Header 1</h1>
+							<h2>Header 2</h2>
+							<h3>Header 3</h3>
+							<p>Paragraph</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="example em">
+				<p>em - Emphermal Unit</p>
+				<div class="one">
+					<p>ONE: font size: 18px</p>
+					<h1>Header 1</h1>
+					<h2>Header 2</h2>
+					<h3>Header 3</h3>
+					<p>Paragraph</p>
+					<div class="two">
+						<p>ONE: font size: 22px</p>
+						<h1>Header 1</h1>
+						<h2>Header 2</h2>
+						<h3>Header 3</h3>
+						<p>Paragraph</p>
+						<div class="three">
+							<p>ONE: font size: 14px</p>
+							<h1>Header 1</h1>
+							<h2>Header 2</h2>
+							<h3>Header 3</h3>
+							<p>Paragraph</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="example rem">
+				<p>rem - Root Emphermal Unit</p>
+				<div class="one">
+					<p>ONE: font size: 18px</p>
+					<h1>Header 1</h1>
+					<h2>Header 2</h2>
+					<h3>Header 3</h3>
+					<p>Paragraph</p>
+					<div class="two">
+						<p>ONE: font size: 22px</p>
+						<h1>Header 1</h1>
+						<h2>Header 2</h2>
+						<h3>Header 3</h3>
+						<p>Paragraph</p>
+						<div class="three">
+							<p>ONE: font size: 14px</p>
+							<h1>Header 1</h1>
+							<h2>Header 2</h2>
+							<h3>Header 3</h3>
+							<p>Paragraph</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+	</body>
+</html>
