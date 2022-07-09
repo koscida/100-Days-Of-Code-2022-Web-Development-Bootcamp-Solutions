@@ -1,65 +1,82 @@
 :root {
 	/* https://colorhunt.co/palette/66bfbfeaf6f6ffffffff0063 */
-	--bg-primary-color: #FF0063;
-	--bg-light-color: #EAF6F6;
-	--bg-light-color-text: #7A8686;
-	--bg-secondary-color: #66BFBF;
-	--bg-secondary-color-darker: #3a8c8c;
-	--bg-secondary-color-text: mintcream;
+	--c-red-bg: #FF0063;
+	--c-red-text: #FFF;
+	--c-red-lighter-bg: #eca9c3;
+	
+	--c-white-bg: #EAF6F6;
+	--c-white-text: #7A8686;
+	
+	--c-green-bg: #66BFBF;
+	--c-green-text: mintcream;
+	--c-green-darker-bg: #266767;
+	--c-green-darker-text: mintcream;
+	--c-green-lighter-bg: #b3e2e2;
+	--c-green-lighter-text: #3A4646;
 }
 
 
 /* override bootstrap */
 
-.btn-primary {
+.btn-secondary {
 	--bs-btn-color: #fff;
-	--bs-btn-bg: var(--bg-primary-color);
-	--bs-btn-border-color: var(--bg-primary-color);
+	--bs-btn-bg: var(--c-red-bg);
+	--bs-btn-border-color: var(--c-red-bg);
 	--bs-btn-hover-color: #fff;
-	--bs-btn-hover-bg: var(--bg-primary-color);
-	--bs-btn-hover-border-color: var(--bg-primary-color);
+	--bs-btn-hover-bg: var(--c-red-bg);
+	--bs-btn-hover-border-color: var(--c-red-bg);
 	--bs-btn-focus-shadow-rgb: 49,132,253;
 	--bs-btn-active-color: #fff;
-	--bs-btn-active-bg: var(--bg-primary-color);
-	--bs-btn-active-border-color: var(--bg-primary-color);
+	--bs-btn-active-bg: var(--c-red-bg);
+	--bs-btn-active-border-color: var(--c-red-bg);
 	--bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
 	--bs-btn-disabled-color: #fff;
-	--bs-btn-disabled-bg: var(--bg-primary-color);
-	--bs-btn-disabled-border-color: var(--bg-primary-color);
+	--bs-btn-disabled-bg: var(--c-red-bg);
+	--bs-btn-disabled-border-color: var(--c-red-bg);
 }
-.btn-secondary {
-	--bs-btn-color: var(--bg-secondary-color-text);
-	--bs-btn-bg: var(--bg-secondary-color);
-	--bs-btn-border-color: var(--bg-secondary-color);
-	--bs-btn-hover-color: var(--bg-secondary-color-text);
-	--bs-btn-hover-bg: var(--bg-secondary-color);
-	--bs-btn-hover-border-color: var(--bg-secondary-color);
+.btn-primary {
+	--bs-btn-color: var(--c-green-text);
+	--bs-btn-bg: var(--c-green-bg);
+	--bs-btn-border-color: var(--c-green-bg);
+	--bs-btn-hover-color: var(--c-green-text);
+	--bs-btn-hover-bg: var(--c-green-bg);
+	--bs-btn-hover-border-color: var(--c-green-bg);
 	--bs-btn-focus-shadow-rgb: 49,132,253;
-	--bs-btn-active-color: var(--bg-secondary-color-text);
-	--bs-btn-active-bg: var(--bg-secondary-color);
-	--bs-btn-active-border-color: var(--bg-secondary-color);
+	--bs-btn-active-color: var(--c-green-text);
+	--bs-btn-active-bg: var(--c-green-bg);
+	--bs-btn-active-border-color: var(--c-green-bg);
 	--bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-	--bs-btn-disabled-color: var(--bg-secondary-color-text);
-	--bs-btn-disabled-bg: var(--bg-secondary-color);
-	--bs-btn-disabled-border-color: var(--bg-secondary-color);
+	--bs-btn-disabled-color: var(--c-green-text);
+	--bs-btn-disabled-bg: var(--c-green-bg);
+	--bs-btn-disabled-border-color: var(--c-green-bg);
 }
 .btn-light {
-	--bs-btn-color: var(--bg-light-color-text);
-	--bs-btn-bg: var(--bg-light-color);
-	--bs-btn-border-color: var(--bg-light-color);
-	--bs-btn-hover-color: var(--bg-light-color-text);
-	--bs-btn-hover-bg: var(--bg-light-color);
-	--bs-btn-hover-border-color: var(--bg-light-color);
+	--btn-light: var(--c-green-lighter-bg);
+	--btn-light-text: var(--c-green-lighter-text);
+	--btn-light-hover: var(--c-green-lighter-bg);
+	--btn-light-active: var(--c-green-lighter-bg);
+	--btn-light-disabled: var(--c-green-lighter-text);
+	--btn-light-disabled-text: var(--c-green-lighter-text);
+	
+	--bs-btn-color: var(--btn-light-text);
+	--bs-btn-bg: var(--btn-light);
+	--bs-btn-border-color: var(--btn-light);
+	--bs-btn-hover-color: var(--btn-light-text);
+	--bs-btn-hover-bg: var(--btn-light-hover);
+	--bs-btn-hover-border-color: var(--btn-light-hover);
 	--bs-btn-focus-shadow-rgb: 49,132,253;
-	--bs-btn-active-color: var(--bg-light-color-text);
-	--bs-btn-active-bg: var(--bg-light-color);
-	--bs-btn-active-border-color: var(--bg-light-color);
+	--bs-btn-active-color: var(--btn-light-text);
+	--bs-btn-active-bg: var(--btn-light-active);
+	--bs-btn-active-border-color: var(--btn-light-active);
 	--bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-	--bs-btn-disabled-color: var(--bg-light-color-text);
-	--bs-btn-disabled-bg: var(--bg-light-color);
-	--bs-btn-disabled-border-color: var(--bg-light-color);
+	--bs-btn-disabled-color: var(--btn-light-disabled-text);
+	--bs-btn-disabled-bg: var(--c-white-bg);
+	--bs-btn-disabled-border-color: var(--c-white-bg);
 }
 .btn {
+	--bs-btn-padding-y: 0.45rem;
+	--bs-btn-padding-x: 1.5rem;
+	
 	display: inline-block;
 	padding: var(--bs-btn-padding-y) var(--bs-btn-padding-x);
 	font-family: var(--bs-btn-font-family);
@@ -89,24 +106,97 @@ body {
 	text-align: center;
 }
 header {
-	background: var(--bg-secondary-color);
-	color: var(--bg-secondary-color-text);
+	background: var(--c-green-bg);
+	color: var(--c-green-text);
 }
 
-.playerSymbol {
-	font-size: 2em;
-}
+
 
 #gameConfiguration {
-	
 }
 #gameConfiguration ol {
 	list-style-type: none;
 	display: flex;
 	flex-direction: row;
+	padding: 0;
 }
 #gameConfiguration li {
+	width: 50%;
 }
 #gameConfiguration article {
-	background: var(--bg-secondary-color);
+	background: var(--c-green-bg);
+}
+#gameConfiguration h2, h3, p {
+	font-size: 1rem;
+	margin: 0.25rem 0;
+}
+#gameConfiguration h3 {
+	font-size: 1.5rem;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: var(--c-green-darker-bg);
+}
+.playerSymbol {
+	font-size: 2rem;
+	font-weight: bolder;
+}
+
+
+#gameDisplay {
+}
+#activePlayer {
+	font-weight: bold;
+	text-transform: uppercase;
+}
+#gameOver {
+	display: none;
+}
+#gameBoard {
+	--size: 6rem;
+	--gap: 10px;
+	list-style-type: none;
+	padding: 0;
+	margin: 0 auto;
+	width: calc((3 * var(--size)) + (2 * var(--gap)));
+	display: grid;
+	grid-template: repeat(3,var(--size)) / repeat(3,var(--size));
+	grid-gap: var(--gap);
+}
+#gameBoard li {
+	background-color: var(--c-green-lighter-bg);
+	color: var(--c-green-lighter-text);
+	border-radius: 2px;
+	cursor: pointer;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 2.5rem;
+	font-weight: bold;
+}
+#gameBoard li:hover {
+	background-color: var(--c-green-bg);
+	color: var(--c-green-text);
+	cursor: pointer;
+}
+#gameBoard li.disabled {
+	background-color: var(--c-green-bg);
+	color: var(--c-green-text);
+	cursor: default;
+}
+
+.modal {
+	background: rgba(0,0,0,0.3);
+}
+#configOverlay > div {
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+	position: fixed;
+	top: 20%;
+	left: calc(50% - 20rem);
+	width: 40rem;
+	background-color: white;
+	padding: 1rem;
+	border-radius: 6px;
+}
+#configOverlay .error input {
+	border: 1px solid var(--c-red-bg);
 }
