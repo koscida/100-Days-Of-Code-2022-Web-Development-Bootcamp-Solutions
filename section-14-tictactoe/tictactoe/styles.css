@@ -143,6 +143,7 @@ header {
 
 
 #gameDisplay {
+	display: none;
 }
 #activePlayer {
 	font-weight: bold;

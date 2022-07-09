@@ -37,9 +37,10 @@
 				</form>
 			</div>
 		</aside>
-		<div class="container">
+		
+		<div class="container py-5">
 			<section id="gameConfiguration" class="mx-auto col-lg-6 col-md-8 col-sm-10">
-				<ol class="pt-5 pb-3">
+				<ol class="pb-3">
 					<li class="px-5">
 						<article class="p-3" id="player1Data">
 							<h2>Player 1</h2>
@@ -50,36 +51,36 @@
 					</li>
 					<li class="px-5">
 						<article class="p-3" id="player2Data">
-							<h2>Player 1</h2>
+							<h2>Player 2</h2>
 							<h3 id="player2Name">PLAYER NAME</h3>
 							<p class="playerSymbol" id="player1Symbol">O</p>
 							<p><button class="btn btn-light" id="player2EditBtn" data-playerid="2">Edit</button></p>
 						</article>
 					</li>
 				</ol>
-				<button class="btn btn-secondary">Start New Game</button>
+				<button class="btn btn-secondary" id="startGameBtn">Start New Game</button>
 			</section>
 	
 			<section id="gameDisplay" class="p-3 mx-auto col-lg-4 col-sm-6">
 				<article id="gameOver">
-					<h2>You won, <span id="winner-name">PLAYER NAME</span>!</h2>
+					<h2>You won, <span id="winnerName">PLAYER NAME</span>!</h2>
 					<p>Click "Start New Game" above, to start a new game!</p>
 				</article>
 		
-				<p>It's your turn <span id="activePlayer">PLAYER NAME</span>!</p>
+				<p>It's your turn <span id="activePlayerName">PLAYER NAME</span>!</p>
 				
 				<ol id="gameBoard" class="py-3">
-					<li class="disabled">X</li>
-					<li></li>
-					<li class="disabled">O</li>
+					<li data-col="0" data-row="0"></li>
+					<li data-col="1" data-row="0"></li>
+					<li data-col="2" data-row="0"></li>
 		
-					<li></li>
-					<li class="disabled">X</li>
-					<li></li>
+					<li data-col="0" data-row="1"></li>
+					<li data-col="1" data-row="1"></li>
+					<li data-col="2" data-row="1"></li>
 		
-					<li class="disabled">O</li>
-					<li></li>
-					<li></li>
+					<li data-col="0" data-row="2"></li>
+					<li data-col="1" data-row="2"></li>
+					<li data-col="2" data-row="2"></li>
 				</ol>
 			</section>
 			
